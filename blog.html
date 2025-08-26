@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tarifs & Offres – Explorez Idjwi</title>
-    <meta name="description" content="Découvrez nos tarifs et offres spéciales pour visiter Explorez Idjwi." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog – Explorez Idjwi</title>
+    <meta name="description" content="Découvrez les actualités, récits et conseils pour explorer Idjwi." />
     <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="12" fill="%232b6cb0"/%3E%3Cpath d="M14 36c8-2 16-14 26-14 8 0 10 8 10 8l-8 8-12 10-8-6-8-6z" fill="%23f6ad55"/%3E%3C/svg%3E' />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +12,8 @@
     <script>(function(){try{var s=localStorage.getItem('theme');var d=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;var t=s||(d?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
       <div class="container nav">
         <a href="index.html" class="logo">Explorez Idjwi</a>
@@ -26,7 +26,7 @@
             <li><a href="temoignages.html">Témoignages</a></li>
             <li><a href="tarifs.html">Tarifs</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
           </ul>
         </nav>
         <button class="theme-toggle" id="theme-toggle" aria-label="Activer le mode sombre" title="Mode sombre"></button>
@@ -39,68 +39,49 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="section-title">Tarifs & Offres</h1>
-          <p class="section-subtitle">Des options pour toutes les envies. Réservez en ligne et bénéficiez de nos offres spéciales.</p>
-
-          <div class="pricing">
-            <article class="price-card">
-              <div class="badge">Populaire</div>
-              <h3>Visite classique</h3>
-              <div class="price">19€</div>
-              <p class="muted">Par adulte. -12 ans: 9€.</p>
-              <ul class="mt-4">
-                <li>1h30 de visite guidée</li>
-                <li>Accès aux points panoramiques</li>
-                <li>Groupes jusqu'à 20 pers.</li>
-              </ul>
-              <div class="mt-6"><a class="btn btn-primary" href="reservation.html">Réserver</a></div>
-            </article>
-
-            <article class="price-card" style="border-width:2px; border-color: var(--primary-600);">
-              <div class="badge" style="background: #bbf7d0;">Meilleur choix</div>
-              <h3>Visite privée</h3>
-              <div class="price">49€</div>
-              <p class="muted">Prix par personne, min. 4 pers.</p>
-              <ul class="mt-4">
-                <li>2h de visite sur-mesure</li>
-                <li>Horaires flexibles</li>
-                <li>Dégustation locale</li>
-              </ul>
-              <div class="mt-6"><a class="btn btn-primary" href="reservation.html">Réserver</a></div>
-            </article>
-
-            <article class="price-card">
-              <div class="badge">Familles</div>
-              <h3>Pack famille</h3>
-              <div class="price">79€</div>
-              <p class="muted">2 adultes + 2 enfants</p>
-              <ul class="mt-4">
-                <li>Parcours adapté enfants</li>
-                <li>Jeu de piste inclus</li>
-                <li>Priorité sur certaines activités</li>
-              </ul>
-              <div class="mt-6"><a class="btn btn-primary" href="reservation.html">Réserver</a></div>
-            </article>
-          </div>
-
-          <h2 class="section-title mt-8">Offres spéciales</h2>
+          <h1 class="section-title">Blog</h1>
+          <p class="section-subtitle">Actualités, récits et conseils pour explorer Idjwi.</p>
           <div class="card-grid">
             <article class="card">
+              <div class="card-media"><img src="assets/images/Idjwi_Iceland.jpg" alt="Découverte de l'île" loading="lazy" /></div>
               <div class="card-body">
-                <h3 class="card-title">Early Bird -10%</h3>
-                <p class="card-text">Réservez 30 jours à l'avance et bénéficiez de 10% de remise.</p>
+                <h3 class="card-title">Découverte de l'île d'Idjwi</h3>
+                <p class="card-text">Retour sur une journée d'exploration entre villages et paysages naturels.</p>
+                <form id="text1" style="display: none;" >
+
+                  L'île d'Idjwi est une véritable merveille de la RDC, offrant un écosystème exceptionnel, des paysages spectaculaires sur le lac Kivu, et surtout, une atmosphère de paix unique dans une région pourtant marquée par des conflits. Cette île est réputée pour son riche environnement naturel, sa culture locale, ses cultures agricoles comme le café et les ananas, et son potentiel en matière d'écotourisme, tout en étant confrontée à des défis de développement comme le manque d'infrastructures. 
+
+                </form>
+                <a href="blog1.html" class="btn btn-secondary" id="btn1"></a>
               </div>
             </article>
             <article class="card">
+              <div class="card-media"><img src="assets/images/bashana.webp" alt="Pêche artisanale" loading="lazy" /></div>
               <div class="card-body">
-                <h3 class="card-title">Étudiants</h3>
-                <p class="card-text">Tarif réduit sur présentation d'un justificatif en cours de validité.</p>
+                <h3 class="card-title">La pêche artisanale à Idjwi</h3>
+                <p class="card-text">Rencontre avec les pêcheurs et immersion dans leurs traditions.</p>
+                
+                <form class="card-text" style="display: none;" id="text2">
+                  La pêche à Idjwi est essentielle pour l'économie locale, la sécurité alimentaire et le bien-être des populations de l'île, fournissant des moyens de subsistance et des ressources nutritionnelles cruciales. Cependant, cette activité est confrontée à des défis importants, tels que l'insécurité, les conflits d'accès aux ressources, les mauvaises pratiques de pêche et la pollution, qui menacent la durabilité des écosystèmes et des moyens de subsistance des pêcheurs. 
+<h4>Rôle économique et social</h4>
+<h4>Moyen de subsistance </h4>
+<h4>Création d'emplois: </h4>
+Le secteur de la pêche, incluant les pêcheurs, les mareyeurs, et les transformeuses de poisson, est un pourvoyeur d'emplois important. 
+</form><br>
+ <a href="blog2.html" class="btn btn-secondary" id="btn2"></a>
               </div>
+             
             </article>
             <article class="card">
+              <div class="card-media"><img src="assets/images/REPAS1.jpg" alt="Gastronomie locale" loading="lazy" /></div>
               <div class="card-body">
-                <h3 class="card-title">Groupes</h3>
-                <p class="card-text">Devis dédié pour les groupes de plus de 20 personnes.</p>
+                <h3 class="card-title">Gastronomie locale</h3>
+                <p class="card-text">Découvrez les saveurs uniques de l'île à travers ses plats typiques.</p>
+                <form style="display: none;" id="text3">
+                  L'alimentation à Idjwi repose principalement sur les produits locaux issus de l'agriculture et de la pêche, notamment le café, les ananas, le fretin « sambasa » et les dindons. L'île est reconnue pour ses productions agricoles et vise une alimentation bio-gastronomique valorisant ces produits locaux. L'agriculture, la pêche, et des initiatives comme les associations de femmes pour les ananas et les coopératives pour le café constituent la base de l'économie et de la gastronomie locales.
+
+                </form>
+                <a href="blog3.html" class="btn btn-secondary" id="btn3"></a>
               </div>
             </article>
           </div>
@@ -122,7 +103,7 @@
               <li><a href="tarifs.html">Tarifs</a></li>
               <li><a href="temoignages.html">Témoignages</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="blog">Blog</a></li>
+              <li><a href="blog.html">Blog</a></li>
             </ul>
           </div>
           <div class="col">
@@ -136,8 +117,8 @@
         </div>
         <div class="copyright">© <span id="year"></span> Explorez Idjwi. Tous droits réservés.</div>
       </div>
-      <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    
+      <script src="blog.js"></script>
     </footer>
-  </body>
-  </html>
-
+    </body>
+</html>
